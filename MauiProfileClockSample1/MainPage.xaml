@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiProfileClockSample1.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="10"
+            Padding="20,0"
+            VerticalOptions="Center">
+
+            <Image
+                Source="dotnet_bot.png"
+                SemanticProperties.Description="Cute dot net bot waving hi to you!"
+                HeightRequest="100"
+                HorizontalOptions="Center" />
+
+            <Label
+                Text="Welcome to MAUI version of EMDK ProfileClockSample1 - EDITED BY CXNT48"
+                HorizontalTextAlignment="Center"
+                FontSize="18"
+                HorizontalOptions="Center" />
+
+            <Label
+                Text="TimeZone (Olson format or GMT+/-HH:MM):"
+                FontSize="13" 
+                FontAttributes="Bold"
+                HorizontalOptions="Start" />
+
+            <Entry x:Name="txtTimeZone" Text="GMT+05:45"></Entry>
+
+            <Label
+                Text="Date (YYYY-MM-DD):"
+                FontSize="13"
+                FontAttributes="Bold"
+                HorizontalOptions="Start" />
+
+            <Entry x:Name="txtDate" Text="2022-12-16"></Entry>
+
+            <Label
+                Text="Time (HH:MM:SS)::"
+                 FontSize="13"
+                FontAttributes="Bold"
+                HorizontalOptions="Start" />
+
+            <Entry x:Name="txtTime" Text="13:19:44"></Entry>
+
+            <Label
+                x:Name="lblStatus"
+                Text="Status: "
+                FontSize="13"
+                HorizontalOptions="Start" />
+            
+
+            <Button
+                x:Name="btnSetClock"
+                Text="Set Clock"
+                Clicked="onSetClockClicked"
+                HorizontalOptions="Start" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
