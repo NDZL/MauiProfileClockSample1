@@ -1,4 +1,6 @@
-# MauiProfileClockSample1
+# MauiProfileClockSample1  
+
+Please be aware that this application / sample is provided as-is for demonstration purposes without any guarantee of support
 
 Here are a couple of screenshots on the solution!
 
